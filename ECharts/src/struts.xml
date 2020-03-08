@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+	<constant name="struts.multipart.maxSize" value="104857600"/>	
+	
+    <package name="default" namespace="/" extends="struts-default">
+<!--        <interceptors>    -->
+<!--            <interceptor name="loginInterceptor" class="com.pb.sas.interceptor.LoginInterceptor"/>    -->
+<!--            <interceptor-stack name="loginDefaultStack">    -->
+<!--                <interceptor-ref name="loginInterceptor"></interceptor-ref> -->
+<!--                <interceptor-ref name="defaultStack"></interceptor-ref>-->
+<!--            </interceptor-stack>    -->
+<!--        </interceptors>-->
+<!--        <default-interceptor-ref name="loginDefaultStack"/>-->
+<!--        <global-results>-->
+<!--    	<result name="noLogin">/noLogin.html</result>-->
+<!--    	</global-results>-->
+        <action name="*_*" class="{1}" method="{2}"/>
+    </package>
+</struts>

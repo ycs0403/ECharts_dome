@@ -1,0 +1,5 @@
+Eclipse直导，支持jdk1.8 + tomcat8.5
+
+libs目录:项目已经导了所有jar包，直接启动即可
+
+浏览器：http://localhost:8080/ECharts/
